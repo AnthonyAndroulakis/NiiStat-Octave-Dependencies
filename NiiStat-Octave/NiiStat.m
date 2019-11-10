@@ -30,6 +30,8 @@ addpath(strcat(OctSPM12path.path,'/src')) %already compiled spm for Octave
 addpath(OctNiiStatpath.path) %NiiStat, edited to work in Octave
 
 usesGUI = false % no GUI in Octave version yet
+GUI=[]
+
 
 fprintf('Octave Version 1 November 2019 of %s %s %s\n', mfilename, computer, version);
 ver; %report complete version information, e.g. "Operating System: Mac OS X  Version: 10.11.5 Build: 15F34"
@@ -220,6 +222,7 @@ if designUsesNiiImages %voxelwise images do not have regions of interest, and ar
     roiIndices = 0;
     modalityIndices = 1;
 end
+GUI=[]
 for i = 1: length(modalityIndices) %for each modality
     modalityIndex = modalityIndices(i);
     for j = 1: length(roiIndices)
@@ -229,26 +232,6 @@ for i = 1: length(modalityIndices) %for each modality
            specialStr = ['special=[', strtrim(sprintf('%d ',special)),'] '];
         end
         fprintf('Analyzing roi=%d, modality=%d, permute=%d, %sdesign=%s\n',roiIndex, modalityIndex,numPermute,specialStr, xlsname);
-        disp(designMat)
-        disp(roiIndex)
-        disp(modalityIndex)
-        disp(numPermute)
-        disp(pThresh)
-        disp(minOverlap)
-        disp(regressBehav)
-        disp(maskName)
-        disp(GrayMatterConnectivityOnly)
-        disp(deSkew)
-        disp(doTFCE)
-        disp(reportROIvalues)
-        disp(xlsname)
-        disp(kROIs)
-        disp(doSVM)
-        disp(doVoxReduce)
-        disp(hemiKey)
-        disp(interhemi)
-        disp(statname)
-        disp(GUI)
         processExcelSub(designMat, roiIndex, modalityIndex,numPermute, pThresh, minOverlap, regressBehav, maskName, GrayMatterConnectivityOnly, deSkew, customROI, doTFCE, reportROIvalues, xlsname, kROIs, doSVM, doVoxReduce, hemiKey, interhemi, statname, GUI); %%GY
     end
 end
