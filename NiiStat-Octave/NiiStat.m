@@ -18,6 +18,8 @@ function NiiStat(xlsname, roiIndices, modalityIndices,numPermute, pThresh, minOv
 % NiiStat
 % NiiStat('LIME.xlsx',1,1,0,0.05,1)
 
+% Anthony Androulakis edited NiiStat to work in Octave on November 10, 2019
+
 %Added by Roger to ensure right NiiStatGUI cfg file is opened and used
 %GUI is not used in this Octave version of NiiStat
 
