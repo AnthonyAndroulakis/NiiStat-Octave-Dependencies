@@ -25,7 +25,7 @@ global usesGUI;
 pkg load io %load io package, needed for reading excel file
 addpath('../spm12-r7487') %already compiled spm for Octave
 addpath('../spm12-r7487/src') %already compiled spm for Octave
-addpath('../NiiStat') %NiiStat, edited to work in Octave
+addpath('../NiiStat-Octave') %NiiStat, edited to work in Octave
 
 usesGUI = false % no GUI in Octave version yet
 
