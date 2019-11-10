@@ -8,8 +8,10 @@
 This README gives a brief introduction to the SPM software. Full details can be found
 on the [SPM website](https://www.fil.ion.ucl.ac.uk/spm/).
  
-See also `Contents.m`, `AUTHORS.txt` and `LICENCE.txt`.
-  
+See also `Contents.m`, `AUTHORS.txt` and `LICENSE.txt`.
+
+## This SPM version has been precompiled for use in Octave 4.4.1.
+
 # SPM
  
 Statistical Parametric Mapping refers to the construction and assessment of spatially
