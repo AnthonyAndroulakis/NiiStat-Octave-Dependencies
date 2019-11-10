@@ -1,10 +1,10 @@
-##### Introduction
+## Introduction
 
 NiiStat is a set of MATLAB/Octave scripts for analyzing neuroimaging data from clinical populations
 
 This GitHub archive contains the latest release for Octave. For usage see the [NITRC website](http://www.nitrc.org/projects/niistat/).
 
-##### Versions
+## Versions
 
 9-October-2016 (MATLAB):
  - Saves node/edge map for connectome analyses (DTI/Rest, GLM/SVM)
@@ -43,7 +43,7 @@ This GitHub archive contains the latest release for Octave. For usage see the [N
 10-Nov-2019 (Octave):
  - edited NiiStat code to work in Octave, a free version of MATLAB
 
-##### Installation
+## Installation
 
 There are two methods to install this software:
 
@@ -52,7 +52,7 @@ There are two methods to install this software:
 
 In either case, you will want to make sure that the "NiiStat" folder that you installed is in your Matlab path.
 
-##### Notes
+## Notes
 
  - [NiiStat Wiki](https://www.nitrc.org/plugins/mwiki/index.php/niistat:MainPage)
  - [NiiStat Tutorial](https://www.nitrc.org/plugins/mwiki/index.php/niistat:TutorialPage)
