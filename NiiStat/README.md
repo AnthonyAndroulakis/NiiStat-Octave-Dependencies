@@ -2,7 +2,7 @@
 
 NiiStat is a set of MATLAB/Octave scripts for analyzing neuroimaging data from clinical populations
 
-This GitHub archive contains the latest release for Octave. For usage see the [NITRC website](http://www.nitrc.org/projects/niistat/)
+This GitHub archive contains the latest release for Octave. For usage see the [NITRC website](http://www.nitrc.org/projects/niistat/).
 
 ##### Versions
 
