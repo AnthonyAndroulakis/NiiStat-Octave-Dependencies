@@ -22,14 +22,16 @@ function NiiStat(xlsname, roiIndices, modalityIndices,numPermute, pThresh, minOv
 %GUI is not used in this Octave version of NiiStat
 
 global usesGUI;
+OctNiiStatpath=what('../NiiStat-Octave');
+OctSPM12path=what('spm12-r7487');
 pkg load io %load io package, needed for reading excel file
-addpath('../spm12-r7487') %already compiled spm for Octave
-addpath('../spm12-r7487/src') %already compiled spm for Octave
-addpath('../NiiStat-Octave') %NiiStat, edited to work in Octave
+addpath(OctSPM12path.path) %already compiled spm for Octave
+addpath(strcat(OctSPM12path.path,'/src')) %already compiled spm for Octave
+addpath(OctNiiStatpath.path) %NiiStat, edited to work in Octave
 
 usesGUI = false % no GUI in Octave version yet
 
-fprintf('Version 3 March 2017 of %s %s %s\n', mfilename, computer, version);
+fprintf('Octave Version 1 November 2019 of %s %s %s\n', mfilename, computer, version);
 ver; %report complete version information, e.g. "Operating System: Mac OS X  Version: 10.11.5 Build: 15F34"
 if ~isempty(strfind(mexext, '32')), warning('Some features like SVM require a 64-bit computer'); end;
 hemiKey = 0;
